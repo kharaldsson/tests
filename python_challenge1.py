@@ -8,6 +8,7 @@ def str_replace(str):
             newstr += str[i]
         else:
             abet_index = abet.find(str[i])
+            #use modulo to wrap around abet
             newstr += abet[(abet_index + 2) % len(abet)]
     return newstr
 
